@@ -29,4 +29,4 @@ const connectDB = async () => {
     }
 };
 
-module.exports = { connectDB, isConnected };
+module.exports = { connectDB };
