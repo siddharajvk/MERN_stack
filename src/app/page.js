@@ -1,8 +1,8 @@
 "use client"
 import React from 'react';
-import './HomePage.css';
-import Header from './components/layout/Header.js';
 import { connectDB } from '../dbConfig/db.js'; // Update the path as per your project structure
+import './Homepage.css';
+import Header from './components/layout/Header.js';
 
 await connectDB();
 
