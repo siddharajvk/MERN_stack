@@ -1,6 +1,6 @@
 "use client"
 import { useSession } from "next-auth/react";
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Table2 from "../components/table2/page";
