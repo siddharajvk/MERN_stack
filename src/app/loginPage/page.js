@@ -6,7 +6,7 @@ import Footer from "../components/layout/Footer";
 import Header from "../components/layout/Header";
 import './loginPage.css';
 
-const LoginPage = () => {
+export default function LoginPage  ()  {
     const router = useRouter();
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
@@ -124,4 +124,3 @@ const LoginPage = () => {
 }
 }
 
-export default LoginPage;
