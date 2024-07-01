@@ -10,7 +10,7 @@ const connectDB = async () => {
 
     try {
         // MongoDB connection URI
-        const uri = 'mongodb+srv://ayushwaghe23:gzwE5NaXLkBopSLJ@cluster0.snwvfae.mongodb.net/mern?retryWrites=true&w=majority';
+        const uri ='mongodb+srv://ayushwaghe23:gzwE5NaXLkBopSLJ@cluster0.snwvfae.mongodb.net/mern?retryWrites=true&w=majority';
 
         // Options for MongoDB connection
         const options = {
