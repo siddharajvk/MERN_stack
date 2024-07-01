@@ -1,7 +1,6 @@
+"use client"
 import React from 'react';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import "./table2.css"
+import "./table2.css";
 
 const Table2 = ({data,header1,header2,id1,id2}) => {
     return (
