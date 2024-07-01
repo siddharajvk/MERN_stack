@@ -5,7 +5,7 @@ import Header from "../../components/layout/Header";
 import Table4 from "../../components/table4/page.js";
 import "./findExperts.css";
 
-const findStudents = () => {
+const FindStudents = () => {
 
     const [skills, setSkills] = useState([]);
     const [school, setschool] = useState("");
