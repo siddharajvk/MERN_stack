@@ -1,6 +1,6 @@
 import { getServerSession } from "next-auth/next";
 import { NextResponse } from "next/server";
-import { connectDB } from "../../../dbConfig/db.js";
+import connectDB from "../../../dbConfig/db.js";
 import { OngoingProject } from "../../../models/projectSchema";
 
 await connectDB();
