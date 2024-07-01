@@ -1,10 +1,10 @@
 "use client"
 import React from 'react';
-import { connectDB } from '../dbConfig/db.js'; // Update the path as per your project structure
+ // Update the path as per your project structure
 import './Homepage.css';
 import Header from './components/layout/Header.js';
 
-await connectDB();
+
 
 const Homepage = () => {
   return (
