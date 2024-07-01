@@ -1,6 +1,7 @@
 import { getServerSession } from "next-auth/next";
 import { NextResponse } from "next/server";
-import connectDB from '../../../../dbConfig/db.js';
+
+import connectDB from "../../../dbConfig/db.js";
 import User from "../../../models/userSchema.js";
 
 connectDB();
