@@ -1,0 +1,61 @@
+.container{
+    border:2px solid #56f207;
+    padding:3%;
+    background-color:#e8e4e3;
+  }
+  #p1{
+    border-radius:7px;
+    margin-right:40%;
+  }
+  #p2{
+    border-radius:7px;
+  }
+  #p{
+    border-radius:7px;
+  }
+  label{
+    margin-right:10px;
+  }
+  .Project{
+  padding:2%;
+  border:1px solid black;
+  border-radius:7px;
+  }
+  .category{
+  padding:2%;
+  border:1px solid black;
+  border-radius:7px;
+  }
+  .desc{
+  padding:2%;
+  border:1px solid black;
+  border-radius:7px;
+  }
+  .project-table th,
+  .project-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 2px solid #59e26c;
+  border-top: 2px solid #59e26c; /* Horizontal border */
+  }
+  
+  .project-table th:last-child,
+  .project-table td:last-child {
+  text-align: center;
+  }
+  
+  .project-table th:first-child,
+  .project-table td:first-child {
+  padding-left: 16px; /* Adjust for extra padding on first column */
+  }
+  
+  .project-table {
+  width: 100%;
+  border-collapse: separate; /* Use separate border model */
+  border-spacing: 0 2px;
+  }
+  
+  
+  h1{
+    border:2px solid #56f207;
+  }

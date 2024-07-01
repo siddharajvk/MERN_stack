@@ -1,0 +1,58 @@
+.HeaderContainer{
+    position: fixed;
+    width: 100%;
+}
+
+.exploreApplicationMasterContainer{
+    height: 100vh;
+    margin: -0.6%;
+    width: 101.1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navBar{
+    position: fixed;
+    background-color: red;
+    height: 100%;
+    width: 3%; 
+    /* margin-top: 3.6%; */
+}
+
+.ContentContainer{
+    margin-top: 3.6%;
+    margin-left: 4%;
+    background-color: rgb(228, 216, 216);
+    display: flex;
+    flex-direction: column;
+    margin-right: 1%;
+}
+
+.DivHeader{
+    background-color: rgb(179, 185, 190);
+    padding: 1%;
+    font-size: 25px;
+}
+
+.ProjectFields{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50%;
+    font-size: 20px;
+    padding: 1%;
+    /* background-color: rgb(223, 16, 16); */
+}
+
+.Field{
+    display: flex;
+    flex-direction: row;
+    /* column-gap: 1%; */
+    /* background-color: blue; */
+}
+
+.input{
+    margin-left: 5px;
+}

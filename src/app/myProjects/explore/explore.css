@@ -1,0 +1,70 @@
+.ExploreMasterContainer{
+    height: 100vh;
+    margin: -0.6%;
+    width: 101.1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.HeaderContainer{
+    position: fixed;
+    width: 100%;
+}
+
+.ExploreContentContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.ShowInfoContainer{
+    background-color: rgb(230, 223, 223);
+    display: flex;
+    flex-direction: column;
+    border: solid 1px rgb(203, 196, 196);
+    border-radius: 10px;
+    width: 100%;
+    margin-left: 4%;
+    margin-right: 0.5%;
+    margin-top: 3.6%;
+}
+
+.navBar{
+    position: fixed;
+    background-color: red;
+    height: 100%;
+    width: 3%; 
+    margin-top: 3.6%;
+}
+
+.PageHeader{
+    font-size: 30px;
+    padding: 1%;
+    border: 1px solid rgb(137, 133, 133);
+    border-radius: 3px;
+}
+
+.data{
+    font-size: 20px;
+    margin-right: 5%;
+    border: 1px solid rgb(131, 125, 125);
+    padding: 0.5%;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.label{
+    font-size: 25px;
+}
+
+.RequirementDetails{
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+}
+
+.ApplyDiv{
+    margin-top: 2%;
+    /* font-weight: bold; */
+    font-size: 4vh;
+}
