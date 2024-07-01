@@ -1,7 +1,7 @@
 import { getServerSession } from "next-auth/next";
+import { connectDB } from "../../../../dbConfig/db";
 import Application from "../../../../models/applicationSchema";
 import { OngoingProject } from "../../../../models/projectSchema";
-import connectDB from "../../../dbConfig/db.js";
 
 await connectDB();
 

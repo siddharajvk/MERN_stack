@@ -1,7 +1,7 @@
 import { getServerSession } from "next-auth/next";
 import { NextResponse } from "next/server";
+import { connectDB } from '../../../../dbConfig/db.js';
 import UserProfile from '../../../../models/userProfileSchema.js';
-import connectDB from "../../../dbConfig/db.js";
 
 connectDB();
 
