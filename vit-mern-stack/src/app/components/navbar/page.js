@@ -1,9 +1,9 @@
 "use client"
-import React, { useState } from "react";
 import Image from "next/image";
-import './navbar.css'; // Changed NavBar.css import path
-import vitlogo from "./vitlogo.jpg"; 
 import { useRouter } from "next/navigation";
+import React, { useState } from "react";
+import './navbar.css'; // Changed NavBar.css import path
+import vitlogo from "./vitlogo.jpg";
 
 export default function NavBar() {
     const router=useRouter();
@@ -60,7 +60,7 @@ let toggle = isOpen ? 'open' : '';
             <div className="SideNavBarField">
                 <div className="mainLink" onClick={handleMainLinkClick}>Applications</div>
                 <div className="subLinks">
-                    <div onClick={()=>router.push('/')}>Applied</div>
+                    <div onClick={()=>router.push('/applications/appliedApplications')}>Applied</div>
                     <div onClick={()=>router.push('/applications/recievedApplications')}>Received</div>
                     {/* Add more subfields as needed */}
                 </div>
