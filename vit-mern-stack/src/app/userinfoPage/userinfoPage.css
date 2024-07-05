@@ -1,0 +1,61 @@
+.userinfoPageMasterContainer{
+    position: fixed;
+    margin: -0.6%;
+    height: 100vh;
+    /* background-color: red; */
+    width: 101.1%;
+    display: flex;
+    flex-direction:column;
+    z-index: -1;
+    
+}
+
+.SpotLightContainer{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add box shadow */
+    background-color: rgb(249, 249, 249);
+    width: 99%;
+    border-radius: 3px;
+    margin-left: 4%;
+    display: flex;
+    flex-direction: column;
+}
+
+.userinfoPageContentContainer{
+    z-index: -1;
+    display: flex;
+    flex-direction: row;
+    width: 99%;
+    margin-top: 3.5%;
+    position: relative;
+}
+
+.navBarContainer{
+    position: fixed;
+    /* background-color: red; */
+    height: 100%;
+    width: 3%; 
+}
+
+.SpotLightContainerHeader{
+    border: solid 1px rgb(203, 196, 196);
+    border-radius: 2.5px;
+    display: flex;
+    font-weight: bold;
+    font-size: 25px;
+    align-items: center;
+    padding: 0.5%;
+    background-color:rgba(0, 0, 0, .03);
+    width: 99%;
+    height: 4%;
+}
+
+.Modal{
+    background-color: rgba(102, 102, 102, 0.7);
+    z-index: 10;
+    position: fixed;
+    height: 100vh;
+    width: 101.1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,79 @@
+.project-table {
+  width: 100%;
+  border-collapse: separate; /* Use separate border model */
+  border-spacing: 0 2px;
+}
+
+.project-table th,
+.project-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 2px solid #59e26c;
+  border-top: 2px solid #59e26c; /* Horizontal border */
+}
+
+.project-table th:last-child,
+.project-table td:last-child {
+  text-align: center;
+}
+
+.project-table th:first-child,
+.project-table td:first-child {
+  padding-left: 16px; /* Adjust for extra padding on first column */
+}
+
+.table-container {
+  margin-top: 20px;
+}
+
+thead{
+  background-color: #a6a6d6;
+}
+
+tbody{
+  background-color:#c9c9c9;
+}
+
+button{
+  background-color:#59e26c;
+  padding:5px 15px 5px 15px;
+  border-radius:20px;
+  border:none;
+}
+button:hover{
+  background-color:#2ebf41;
+  cursor:pointer;
+}
+caption{
+  text-align: left;
+  border: none;
+}
+
+.MasterContainer{
+  margin: -0.6%;
+  height: 100vh;
+  /* background-color: red; */
+  width: 101.1%;
+  display: flex;
+  flex-direction:column;
+}
+
+.NavBarAndContent{
+  margin-top: 3%;
+  width: 100%;
+  /* background-color: rebeccapurple; */
+  display: flex;
+  flex-direction: row;
+}
+
+.PageTitle{
+  background-color: #726d6dda;
+  padding: 0.5%;
+}
+
+.navBarContainer{
+  position: fixed;
+  /* background-color: red; */
+  height: 100%;
+  width: 3%; 
+}
