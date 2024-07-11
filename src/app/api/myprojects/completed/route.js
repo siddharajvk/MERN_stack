@@ -4,17 +4,17 @@ import { connectDB } from '../../../../dbConfig/db.js';
 import { CompletedProject, OngoingProject } from '../../../../models/projectSchema.js';
 import UserProfile from '../../../../models/userProfileSchema.js';
 
-await connectDB();
+export async function GET(req) {
+    await connectDB();  // Move this inside the GET function
 
-export async function GET(req, res) {
     try {
         const session = await getServerSession({ req });
 
         if (!session) {
-            return NextResponse.error(new Error('Unauthorized'));
+            return NextResponse.json({ success: false, message: 'Unauthorized' }, { status: 401 });
         }
 
-        const searchParams = new URLSearchParams(req.url.split('?')[1]);
+        const searchParams = new URL(req.url).searchParams;
         const userID = searchParams.get('userID'); 
         const status = searchParams.get('status'); 
 
