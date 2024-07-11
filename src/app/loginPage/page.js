@@ -6,7 +6,7 @@ import Footer from "../components/layout/Footer";
 import Header from "../components/layout/Header";
 import './loginPage.css';
 
-const LoginPage = () => {
+export default LoginPage = () => {
     const router = useRouter();
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
@@ -17,7 +17,7 @@ const LoginPage = () => {
         setIsClient(true);
     }, []);
 
-    const handleSubmit = async (event) => {
+    const HandleSubmit = async (event) => {
         event.preventDefault(); // Prevent default form submission
 
         try {
@@ -62,7 +62,7 @@ const LoginPage = () => {
                 </div>
                 <div className="inputDiv">
                     <div className="form">
-                        <form onSubmit={handleSubmit}>
+                        <form onSubmit={HandleSubmit}>
                             <div className="inputBox">
                                 <input
                                     type="text"
@@ -127,4 +127,3 @@ const LoginPage = () => {
 }
 }
 
-export default LoginPage;

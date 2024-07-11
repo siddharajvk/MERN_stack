@@ -3,12 +3,12 @@ import { useSession } from "next-auth/react";
 import { useSearchParams } from 'next/navigation';
 import React, { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
+import NavBar from "../components/navbar/page";
 import Table2 from "../components/table2/page";
 import Table4 from "../components/table4/page";
 import "./exploreApplication.css";
-import NavBar from "../components/navbar/page";
 
-export default function explorApplication() {
+export default function ExplorApplication() {
 
     const searchParams = useSearchParams();
     const projectId = searchParams.get('projectId');

@@ -2,11 +2,11 @@
 import { useSession } from "next-auth/react";
 import React, { useState } from "react";
 import Header from "../../components/layout/Header";
+import NavBar from "../../components/navbar/page";
 import Table4 from "../../components/table4/page.js";
 import "./findExperts.css";
-import NavBar from "../../components/navbar/page";
 
-const findStudents = () => {
+export default FindStudents = () => {
 
     const [skills, setSkills] = useState([]);
     const [school, setschool] = useState("");
@@ -138,4 +138,3 @@ const findStudents = () => {
     }
 }
 
-export default findStudents;
