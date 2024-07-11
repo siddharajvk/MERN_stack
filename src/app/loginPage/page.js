@@ -40,9 +40,7 @@ export default function LoginPage () {
         } catch (error) {
             console.error("An error occurred:", error);
         }
-        useEffect(() => {
-            setIsClient(true);
-        }, []);
+        
     }
 
 
