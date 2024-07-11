@@ -1,7 +1,7 @@
 "use client"
 import { useSession } from "next-auth/react";
 import React, { useEffect, useState } from "react";
-import Header from "../../components/layout/Header.js";
+import Header from "../../components/layout/Header";
 import Table4 from "../../components/table4/page.js";
 import "./myApplication.css";
 

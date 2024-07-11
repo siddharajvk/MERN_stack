@@ -4,7 +4,7 @@ import './HomePage.css';
 import Header from './components/layout/Header.js';
 import { connectDB } from '../dbConfig/db.js'; // Update the path as per your project structure
 
-await connectDB();
+
 
 const Homepage = () => {
   return (
