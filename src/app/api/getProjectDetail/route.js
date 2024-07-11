@@ -32,7 +32,7 @@ export async function GET(req, res) {
             console.log("Sending data", projectsData);
             return resolve(NextResponse.json({ success: true, projectsData }, { status: 200 }));
 
-        }, 10000);  // Execute immediately
+        }, 60);  // Execute immediately
     }).catch(err => {
         console.error('Error:', err);
         return NextResponse.json({ message: "Internal server error" }, { status: 500 });
