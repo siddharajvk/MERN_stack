@@ -84,17 +84,17 @@ const UpdateModal = ({ onClose, modelTitle, data,userID,updateSubmit }) => {
                     value={newSkill}
                     onChange={handleInputChange}
                 />
-                {suggestions.length > 0 && (
+                {/* {suggestions.length > 0 && ( */}
                     <div className="suggestions">
                         <ul>
-                            {suggestions.map((suggestion, index) => (
+                            {suggestions?.map((suggestion, index) => (
                                 <li key={index} onClick={() => handleAddSkill(suggestion)}>
                                     {suggestion}
                                 </li>
                             ))}
                         </ul>
                     </div>
-                )}
+                {/* )} */}
                 <button onClick={() => handleAddSkill(newSkill)}>Add</button>
                 <table>
                     <thead>
@@ -104,7 +104,7 @@ const UpdateModal = ({ onClose, modelTitle, data,userID,updateSubmit }) => {
                         </tr>
                     </thead>
                     <tbody>
-                        {skills.map((skill, index) => (
+                        {skills?.map((skill, index) => (
                             <tr key={index}>
                                 <td>{skill}</td>
                                 <td>

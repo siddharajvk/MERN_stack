@@ -4,46 +4,46 @@ import { connectDB } from '../../../../dbConfig/db.js';
 import { CompletedProject, OngoingProject } from '../../../../models/projectSchema.js';
 import UserProfile from '../../../../models/userProfileSchema.js';
 
-export async function GET(req) {
-    await connectDB();  // Ensure the database connection is established
+await connectDB();
 
-    return new Promise((resolve, reject) => {
-        setTimeout(async () => {
-            const session = await getServerSession({ req });
+export async function GET(req, res) {
+    const session = await getServerSession({ req });
 
-            if (!session) {
-                return resolve(NextResponse.json({ success: false, message: 'Unauthorized' }, { status: 401 }));
-            }
+    if (!session) {
+        return NextResponse.error(new Error('Unauthorized'));
+    }
 
-            const searchParams = new URL(req.url).searchParams;
-            const userID = searchParams.get('userID'); 
-            const status = searchParams.get('status'); 
+    try {
+        const searchParams = req.nextUrl.searchParams;
 
-            console.log("Fetching projects for userID:", userID, "with status:", status);
+        // const searchParams = new URLSearchParams(req.url.split('?')[1]);
+        const userID = searchParams.get('userID'); 
+        const status = searchParams.get('status'); 
 
-            let projectIDs = [];
+        console.log("Fetching projects for userID:", userID, "with status:", status);
 
-            const currentUser = await UserProfile.findOne({ userID });
+        let projectIDs = [];
 
-            if (!currentUser) {
-                return resolve(NextResponse.json({ success: false, message: "User not found" }, { status: 404 }));
-            }
+        const currentUser = await UserProfile.findOne({ userID });
 
-            let projectsData;
+        if (!currentUser) {
+            return NextResponse.json({ success: false, message: "User not found" }, { status: 404 });
+        }
 
-            if (status === '0') {
-                projectIDs = currentUser.ongoingProjects;
-                projectsData = await OngoingProject.find({ projectID: { $in: projectIDs } });
-            } else {
-                projectIDs = currentUser.completedProjects;
-                projectsData = await CompletedProject.find({ projectID: { $in: projectIDs } });
-            }
-            
-            return resolve(NextResponse.json({ success: true, projectsData }, { status: 200 }));
+        let projectsData;
 
-        }, 60);  // Execute immediately
-    }).catch(err => {
+        if (status === '0') {
+            projectIDs = currentUser.ongoingProjects;
+            projectsData = await OngoingProject.find({ projectID: { $in: projectIDs } });
+        } else {
+            projectIDs = currentUser.completedProjects;
+            projectsData = await CompletedProject.find({ projectID: { $in: projectIDs } });
+        }
+        
+        return NextResponse.json({ success: true, projectsData }, { status: 200 });
+
+    } catch (err) {
         console.error('Error:', err);
         return NextResponse.json({ message: "Internal server error" }, { status: 500 });
-    });
+    }
 }

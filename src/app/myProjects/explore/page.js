@@ -3,11 +3,11 @@ import { useSession } from "next-auth/react";
 import { useRouter, useSearchParams } from 'next/navigation';
 import React, { useEffect, useState } from "react";
 import Header from "../../components/layout/Header.js";
+import NavBar from "../../components/navbar/page.js";
 import ShowProject from "../../components/showProject/page.js";
 import Table2 from "../../components/table2/page.js";
 import Table4 from "../../components/table4/page.js";
 import './explore.css';
-import NavBar from "../../components/navbar/page.js";
 
 const Explore = () => {
     const router = useRouter();

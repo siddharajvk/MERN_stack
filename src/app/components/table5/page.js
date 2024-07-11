@@ -34,7 +34,7 @@ const Table5 = ({ tableTitle, header1, header2, header3, header4, data, id1, id2
                         </tr>
                     </thead>
                     <tbody>
-                        {data.length === 0 ? (
+                        {(!data || (data.length <= 0)) ? (
                             <tr>
                                 <td colSpan="5">No projects to display</td>
                             </tr>

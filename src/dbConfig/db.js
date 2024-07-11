@@ -13,13 +13,14 @@ const connectDB = async () => {
         const uri = 'mongodb+srv://ayushwaghe23:gzwE5NaXLkBopSLJ@cluster0.snwvfae.mongodb.net/mern?retryWrites=true&w=majority';
 
         // Options for MongoDB connection
-        const options = {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-        };
+        // const options = {
+        //     useNewUrlParser: true,
+        //     useUnifiedTopology: true,
+        // };
 
         // Connect to MongoDB
-        await mongoose.connect(uri, options);
+        // await mongoose.connect(uri, options);
+        await mongoose.connect(uri);
 
         isConnected = true;
         console.log('MongoDB connected successfully');

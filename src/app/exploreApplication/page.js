@@ -9,7 +9,6 @@ import Table4 from "../components/table4/page";
 import "./exploreApplication.css";
 
 export default function ExplorApplication() {
-
     const searchParams = useSearchParams();
     const projectId = searchParams.get('projectId');
     const applicationIDs = searchParams.get('applicationIDs');

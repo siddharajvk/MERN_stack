@@ -1,6 +1,4 @@
 "use client"
-import Image from "next/image";
-import { useState } from "react";
 // import styles from "./page.module.css";
 import React from 'react';
 import './userinfo.css';
@@ -47,12 +45,12 @@ const UserInfoComponent = ({ userid, email, school, branch, degree, FacDept, ski
                 </tr>
                 <tr>
                   <td>Skills</td>
-                  <td>{skills.join(' , ')}</td>
+                  <td>{skills?.join(' , ')}</td>
                   {canUpdate === 1 && <button onClick={skillUpdate}>Update</button>}
                 </tr>
                 <tr>
                   <td>Links</td>
-                  <td>{links.join(' , ')}</td>
+                  <td>{links?.join(' , ')}</td>
                   {canUpdate === 1 && <button onClick={linkUpdate}>Update</button>}
                 </tr>
               </tbody>
