@@ -1,6 +1,6 @@
 "use client"
 import { useSession } from "next-auth/react";
-import React, { useState } from "react/display-name";
+import React, { useState } from "react";
 import Header from "../../components/layout/Header";
 import NavBar from "../../components/navbar/page";
 import Table4 from "../../components/table4/page.js";
