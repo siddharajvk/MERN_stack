@@ -1,7 +1,7 @@
 "use client"
 import { signIn } from "next-auth/react";
 import { useRouter } from 'next/navigation';
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react/display-name";
 import Footer from "../components/layout/Footer";
 import Header from "../components/layout/Header";
 import './loginPage.css';
