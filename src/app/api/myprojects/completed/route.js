@@ -41,7 +41,7 @@ export async function GET(req) {
             
             return resolve(NextResponse.json({ success: true, projectsData }, { status: 200 }));
 
-        }, 0);  // Execute immediately
+        }, 10000);  // Execute immediately
     }).catch(err => {
         console.error('Error:', err);
         return NextResponse.json({ message: "Internal server error" }, { status: 500 });
