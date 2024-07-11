@@ -6,7 +6,7 @@ import NavBar from "../../components/navbar/page";
 import Table4 from "../../components/table4/page.js";
 import "./findExperts.css";
 
-export default FindStudents = () => {
+export default function FindStudents  ()  {
 
     const [skills, setSkills] = useState([]);
     const [school, setschool] = useState("");

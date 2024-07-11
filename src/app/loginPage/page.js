@@ -1,12 +1,12 @@
 "use client"
 import { signIn } from "next-auth/react";
 import { useRouter } from 'next/navigation';
-import React, { useEffect, useState } from "react/display-name";
+import React, { useEffect, useState } from "react/";
 import Footer from "../components/layout/Footer";
 import Header from "../components/layout/Header";
 import './loginPage.css';
 
-export default LoginPage = () => {
+export default function LoginPage () {
     const router = useRouter();
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
