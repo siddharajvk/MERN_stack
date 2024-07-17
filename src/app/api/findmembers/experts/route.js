@@ -31,7 +31,7 @@ export async function POST(request) {
         // Add additional criteria based on other parameters
         if (school !== '') query.school = school;
         if (department !== '') query.department = department;
-        if (skills.length > 0) query.skills = { $in: skills };
+        if (skills.length > 1) query.skills = { $in: skills };
 
         console.log("Query:", query);
 
